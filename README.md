@@ -29,3 +29,13 @@ _ Cambie f_alpha por invertir_numero ya que la funcion invierte el orden de los 
 _ Cambie f_beta por calcular_mitad ya que la funcion realiza una division entera por 2: La operación *p / 2 reduce el valor de la variable original a la mitad 
 
 _ Cambie f_gamma por sumar_digitos_al_total ya que la funcion suma la cifra de cada digito al valor original: El bucle calcula la suma de los digitos del numero y luego añade ese resultado al valor almacenado en el puntero
+
+## ¿A qué se debe que los apartados 2 y 3 den el mismo resultado?
+
+_ Se debe a la naturaleza misma del puntero. El apartado 2 pide la dirección almacenada en el puntero, mientras que el apartado 3 pide la dirección de la variable. Como el puntero fue inicializado con &variable, su valor interno es precisamente la ubicación física de esa variable
+
+## ¿Qué obtiene en el punto 4? ¿Es igual a los anteriores? ¿Por qué? 
+
+_ En el punto 4 se obtiene la dirección de memoria del propio puntero
+
+_ No es igual a los anteriores, el puntero es, en sí mismo, una variable que necesita su propio espacio en la memoria para existir. Mientras que el puntero "guarda" la dirección de variable (puntos 2 y 3), él mismo reside en una dirección de memoria distinta
